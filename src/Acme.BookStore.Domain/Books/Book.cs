@@ -7,8 +7,12 @@ using Volo.Abp.Domain.Entities.Auditing;
 
 namespace Acme.BookStore.Books
 {
+    /// <summary>
+    /// Book
+    /// </summary>
     public class Book : AuditedAggregateRoot<Guid>
     {
+
         public string Name { get; set; }
 
         public BookType Type { get; set; }
